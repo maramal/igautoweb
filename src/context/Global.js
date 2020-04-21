@@ -14,9 +14,8 @@ export default ({ children }) => {
 
     const getData = async () => {
         try {
-            const { medias, user } = await ig.scrapeUserPage(process.env.usuario);
-
             console.log('USUARIO', process.env); 
+            const { medias, user } = await ig.scrapeUserPage(process.env.usuario);
 
             setPosts(medias);
             setUsuario(user);
