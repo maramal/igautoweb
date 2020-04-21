@@ -1,0 +1,32 @@
+.pagina-contacto {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #fffff0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text {
+    width: 60%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.text img {
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
