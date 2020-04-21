@@ -15,6 +15,7 @@ export default ({ children }) => {
     const getData = async () => {
         try {
             const username = process.env.USUARIO || 'ahide_art';
+            console.log('USUARIO', username);
             const { medias, user } = await ig.scrapeUserPage(username);
 
             setPosts(medias);
