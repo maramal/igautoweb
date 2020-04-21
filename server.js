@@ -1,11 +1,13 @@
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
+const compression = require('compression');
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(logger(process.env.NODE_ENV === 'development' ? 'dev' : 'combined'));
+app.use(compression());
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'build', 'index.html')));
 
