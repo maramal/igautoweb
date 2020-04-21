@@ -16,6 +16,8 @@ export default ({ children }) => {
         try {
             const { medias, user } = await ig.scrapeUserPage(process.env.usuario);
 
+            console.log('USUARIO', process.env); 
+
             setPosts(medias);
             setUsuario(user);
             setCargando(false);
